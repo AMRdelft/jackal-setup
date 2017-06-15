@@ -1,11 +1,11 @@
 <launch>
 
   <!-- Run the map server -->
- <arg name="map_file" default="$(find Launch)/maps/corridor.yaml"/>
+ <arg name="map_file" default="$(find Launch_jackal)/maps/corridor.yaml"/>
  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 
   <!--- Run AMCL -->
- <include file="$(find Launch)/launch/include/amcl.launch" />
+ <include file="$(find Launch_jackal)/launch/include/amcl.launch" />
 
 
 </launch>
